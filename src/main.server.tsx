@@ -1,8 +1,12 @@
-import { renderToStringAsync } from "solid-js/web";
+import { generateHydrationScript, renderToString } from "solid-js/web";
 import App from "./App";
 
-// Asynchronous string rendering
-export default async function render() {
-  const html = await renderToStringAsync(() => <App />);
+const app = renderToString(() => <App />);
+
+export default async function render(url: string, template: string) {
+  const html = template
+    .replace('<!-- app -->', app)
+    .replace('<!-- hydrate -->', generateHydrationScript());
+
   return html;
 }
