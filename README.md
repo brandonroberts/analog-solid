@@ -1,34 +1,26 @@
-## Usage
+# Solid + Vite + Nitro
 
-Those templates dependencies are maintained via [pnpm](https://pnpm.io) via `pnpm up -Lri`.
+This is an example Solid application using the Vite/Nitro plugin from [AnalogJS](https://analogjs.org). The `@analogjs/vite-plugin-nitro` package can be used with any Vite-based application to provide:
 
-This is the reason you see a `pnpm-lock.yaml`. That being said, any package manager will work. This file can be safely be removed once you clone a template.
+- Hybrid Server-side Rendering
+- Static Site Generation
+- API Routes
 
-```bash
-$ npm install # or pnpm install or yarn install
-```
+## Setup
 
-### Learn more on the [Solid Website](https://solidjs.com) and come chat with us on our [Discord](https://discord.com/invite/solidjs)
+Run `pnpm install` to install the application dependencies.
 
-## Available Scripts
+## Development
 
-In the project directory, you can run:
+Run `pnpm run dev` for a dev server. Navigate to `http://localhost:3000/`. The application automatically reloads if you change any of the source files.
 
-### `npm run dev` or `npm start`
+## Build
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Run `pnpm run build` to build the client/server project. The client build artifacts are located in the `.output/public` directory. The server for the API build artifacts are located in the `.output/server` directory.
 
-The page will reload if you make edits.<br>
+## Community
 
-### `npm run build`
-
-Builds the app for production to the `dist` folder.<br>
-It correctly bundles Solid in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
-
-## Deployment
-
-You can deploy the `dist` folder to any static host provider (netlify, surge, now, etc.)
+- Visit and Star the [GitHub Repo](https://github.com/analogjs/analog)
+- Join the [Discord](https://chat.analogjs.org)
+- Follow us on [Twitter](https://twitter.com/analogjs)
+- Become a [Sponsor](https://github.com/sponsors/brandonroberts)
